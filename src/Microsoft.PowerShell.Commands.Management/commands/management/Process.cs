@@ -190,6 +190,7 @@ namespace Microsoft.PowerShell.Commands
                     !WildcardPattern.ContainsWildcardCharacters(pattern))
                 {
                     WriteNonTerminatingError(
+                        //printf("here");
                         pattern,
                         0,
                         pattern,
@@ -197,7 +198,7 @@ namespace Microsoft.PowerShell.Commands
                         ProcessResources.NoProcessFoundForGivenName,
                         "NoProcessFoundForGivenName",
                         ErrorCategory.ObjectNotFound);
-                    }
+                    
                 }
             }
         }
